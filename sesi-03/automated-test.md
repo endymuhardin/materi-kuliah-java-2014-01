@@ -14,5 +14,10 @@ Library Automated Testing
 * JavaScript : Jasmine dan Karma
 * PHP : PHPUnit
 
-## JUnit ##
+## Maven Command ##
+
+* Compile : `mvn clean package`
+* Run : `mvn exec:java -Dexec.mainClass=nama.class.lengkap.dengan.package`
+* Compile + Run : `mvn clean package exec:java -Dexec.mainClass=nama.class.lengkap.dengan.package`
+
 
