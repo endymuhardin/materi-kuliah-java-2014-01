@@ -19,10 +19,15 @@ public class App {
 		// 3. Insert Data
 		String sql = "insert into t_user ";
 		sql += "(username, email, name) values ";
-		sql += "('endy', 'endy.muhardin@gmail.com', 'Endy Muhardin')";
+		sql += "(?, ?, ?)";
 		
 		PreparedStatement stm = koneksi.prepareStatement(sql);
+		stm.setString(1, "ari");
+		stm.setString(2, "ari.prasasti@gmail.com");
+		stm.setString(3, "Ari Prasasti");
+		
 		stm.executeUpdate();
+		
 		
 		// 4. Disconnect
 		koneksi.close();
