@@ -29,7 +29,20 @@ public class App {
 		stm.executeUpdate();
 		
 		
-		// 4. Disconnect
+		// 4. Query Select
+		String sqlSelect = "select *from t_user";
+		PreparedStatement stmSelect = koneksi.prepareStatement(sqlSelect);
+		ResultSet rs = stmSelect.executeQuery();
+		while(rs.next()){
+			System.out.println("ID :" +rs.getInt("id"));
+			System.out.println("Username : "+rs.getString("username"));
+			System.out.println("Email : "+rs.getString("email"));
+			System.out.println("Nama : "+rs.getString("name"));
+		}
+		rs.close();
+		
+		
+		// 5. Disconnect
 		koneksi.close();
     }
 }
