@@ -1,0 +1,6 @@
+create table t_user (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(255) NOT NULL,
+	email VARCHAR(255) NOT NULL,
+	name VARCHAR(255) NOT NULL
+);
