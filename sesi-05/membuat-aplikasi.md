@@ -2,7 +2,7 @@
 
 Langkah-langkah membuat aplikasi 
 
-1. Membuat Daftar Fitu
+1. Membuat Daftar Fitur
 2. Membuat UI Mockup
 3. Membuat Skema Database
 4. Implementasi Pemrograman
