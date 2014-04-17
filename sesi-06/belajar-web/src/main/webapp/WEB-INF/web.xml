@@ -5,4 +5,15 @@
         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         version="3.0">
 
+		<servlet>
+			<servlet-name>Halo</servlet-name>
+			<servlet-class>com.muhardin.endy.belajar.web.HaloServlet</servlet-class>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>Halo</servlet-name>
+			<url-pattern>/halo</url-pattern>
+		</servlet-mapping>
+			
+		
 </web-app>
