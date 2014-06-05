@@ -62,11 +62,11 @@
 	</thead>
 
 	<tbody>
-		<tr>
-			<td>01234567890</td>
-			<td>Endy Muhardin</td>
-			<td>17 Agustus 1945</td>
-			<td>endy.muhardin@gmail.com</td>
+		<tr ng-repeat="x in daftarMahasiswa">
+			<td>{{x.npm}}</td>
+			<td>{{x.nama}}</td>
+			<td>{{x.tanggalLahir}}</td>
+			<td>{{x.email}}</td>
 			<td>
 				<button class="btn btn-default" data-toggle="modal">
 					<span class="glyphicon glyphicon-pencil"></span>&nbsp;edit
