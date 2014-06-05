@@ -1,0 +1,53 @@
+<h1>Data Mahasiswa</h1>
+
+
+<div class="modal fade" id="formMahasiswa">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Edit Mahasiswa</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Simpan Data</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<td>NPM</td>
+			<td>Nama</td>
+			<td>Tanggal Lahir</td>
+			<td>Email</td>
+			<td><button class="btn btn-default" data-toggle="modal" data-target="#formMahasiswa">
+					<span class="glyphicon glyphicon-plus-sign"></span>&nbsp;new
+				</button>
+			</td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>01234567890</td>
+			<td>Endy Muhardin</td>
+			<td>17 Agustus 1945</td>
+			<td>endy.muhardin@gmail.com</td>
+			<td>
+				<button class="btn btn-default" data-toggle="modal">
+					<span class="glyphicon glyphicon-pencil"></span>&nbsp;edit
+				</button>
+				<button class="btn btn-default">
+					<span class="glyphicon glyphicon-remove"></span>&nbsp;delete
+				</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
